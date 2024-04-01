@@ -112,7 +112,7 @@ awesome when someone starts to use it.
   - 열거형 이름 : PascalCase
   - 열거형의 멤버 변수 : PascalCase
 - 파일
-  - 일반적으로 : calmeCase
+  - 일반적으로 : camelCase
   - 리액트 컴포넌트 : PascalCase
 - 모듈 : snake_case
 - URL : kebab-case
