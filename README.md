@@ -146,10 +146,31 @@ awesome when someone starts to use it.
 
 - next-themes를 이용한 다크모드 관리 : <https://dev.to/topboyasante/setting-up-dark-mode-in-next-js-with-tailwindcss-1bk1>
 - TailwindCSS와 NextJS에서 다크모드 : <https://daniloleal.co/my-world/thinking/darkmode-next-tailwind>
+- 웹에서 다크모드 지원하기 : <https://fe-developers.kakaoent.com/2021/211118-dark-mode/>
 - 관련 패키지 설치
 
   ```zsh
   $pnpm i next-themes react-icons
+  ```
+
+- tailwind.config.ts 파일 수정
+
+  ```zsh
+  const config: Config = {
+  ~~~~ 중략 ~~~~
+  theme: {
+    extend: {
+      darkMode: 'class' // 👈 이 부분 추가
+  ~~~~ 후략 ~~~~
+  }
+  ```
+
+- VSCode 보랴, 화면 확인하러 크롬 들어가는게 불편할 때
+
+  ```zsh
+  VSCode 보기 - 명령 팔레트(shift+cmd+a / 윈도우는 ctrl+shift+p)에서
+  > Simple Browser: Show 선택 - URL 입력(http://localhost:3000 등)
+  👏 간단한 브라우저 창을 드래그하여 수정사항 미리보기 가능
   ```
 
 ### Day 42 (03/31)
@@ -174,6 +195,8 @@ awesome when someone starts to use it.
 
   ```zsh
   $cd ~/{ProjectDirectory} && vercel deploy
+  💡 이미 Deploy 된 것을 최신 Build 버전으로 선택하려면 deploy 대신 아래 사용
+  $vercel --prod
   ```
 
 - Connect Github Repository
