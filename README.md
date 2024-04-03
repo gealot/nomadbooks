@@ -165,13 +165,16 @@ awesome when someone starts to use it.
   }
   ```
 
-- VSCode 보랴, 화면 확인하러 크롬 들어가는게 불편할 때
+- 팁 1. VSCode 보랴, 화면 확인하러 크롬 들어가는게 불편할 때
 
   ```zsh
   VSCode 보기 - 명령 팔레트(shift+cmd+a / 윈도우는 ctrl+shift+p)에서
   > Simple Browser: Show 선택 - URL 입력(http://localhost:3000 등)
   👏 간단한 브라우저 창을 드래그하여 수정사항 미리보기 가능
   ```
+
+- 팁 2. TailwindCSS 기본 컬러셋 말고 내가 고른 컬러 팔레트 만들고 싶을 때
+  Material Design V2 Color Palettes : <https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors>
 
 ### Day 42 (03/31)
 
